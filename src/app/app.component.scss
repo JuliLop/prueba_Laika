@@ -1,0 +1,28 @@
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.marcas {
+  height: 300px;
+  margin-block-start: 10px;
+}
+
+.image-marca {
+  height: 100%;
+}
+
+.image-marca img {
+  width: 80%;
+  padding: 10px;
+}

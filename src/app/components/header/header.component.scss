@@ -1,0 +1,16 @@
+nav {
+  font-size: 12px !important;
+  padding-inline: 20px;
+  span {
+    border-inline: 1px solid white;
+    i {
+      margin-inline: 5px;
+    }
+  }
+  span.tail {
+    border-inline-end: none !important;
+  }
+  span.head {
+    border-inline-start: none !important;
+  }
+}
