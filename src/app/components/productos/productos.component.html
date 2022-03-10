@@ -1,28 +1,24 @@
-<div class="card" style="width: 18rem">
+<div class="card" style="width: 15rem">
   <img
-    src="../assets/img/Hills_canine_treatChicken.jpg"
+    [src]="url"
     class="card-img-top"
     alt="..."
   />
   <div class="card-body">
-    <h5 class="card-title">Hills Canine Treats Chicken</h5>
+    <h5 class="card-title ">{{nombreProducto}}</h5>
     <div class="row">
         <div class="col-12 text-warning text-center">
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span>
-        <span><i class="fas fa-star"></i></span> 
+        <span *ngFor="let star of getStars()"><i class="fas fa-star"></i></span>
         </div>
           
     </div>
     <div class="row">
-      <span class="precio">$19.600</span>
+      <span class="precio">${{precioNormal}}</span>
     </div>
 
     <div class="row">
       <div class="col-6">
-        <span class="precio laika">$16.660</span>
+        <span class="precio laika">${{precioMember}}</span>
       </div>
       <div class="col-6">
         <img
