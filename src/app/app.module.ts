@@ -24,6 +24,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NavCategoriasComponent } from './components/nav-categorias/nav-categorias.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
+import { CategoriasService } from './services/categorias.service';
+import { ProductosComponent } from './components/productos/productos.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
     NavBarComponent,
     NavCategoriasComponent,
     BannerComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,7 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
     MdbValidationModule,
     NoopAnimationsModule
   ],
-  providers: [],
+  providers: [CategoriasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
