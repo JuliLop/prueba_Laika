@@ -29,6 +29,7 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { ProductosService } from './services/productos.service';
 import { MarcasComponent } from './components/marcas/marcas.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    HttpClientModule,
     NoopAnimationsModule
   ],
   providers: [CategoriasService, ProductosService],

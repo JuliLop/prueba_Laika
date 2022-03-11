@@ -15,8 +15,9 @@ export class AppComponent {
   productos: Producto[] = [];
 
   constructor(categoriaService: CategoriasService, productoService: ProductosService) {
-    this.categorias = categoriaService.getCategorias();
-    this.productos = productoService.getProductos();
+    categoriaService.getCategorias().subscribe(categorias =>  this.categorias = categorias);
+    productoService.getProductos().subscribe(productos =>  this.productos = productos);
+  
   }
 }
 
